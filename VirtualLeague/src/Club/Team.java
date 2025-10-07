@@ -132,6 +132,10 @@ public class Team {
 		return new Team(goalkeeper, fieldplayers, nation);
 	}
 	
+	/**
+	 * Adds up the power of the goalkeeper and fieldplayers
+	 * @return the combined strength of goalkeeper and fieldplayers
+	 */
 	public int getPower() {
 		return this.goalkeeper.getStrength() + this.fieldplayers.stream().mapToInt(e -> e.getStrength()).sum();
 	}
