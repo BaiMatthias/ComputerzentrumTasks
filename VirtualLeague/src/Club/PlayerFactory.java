@@ -11,6 +11,7 @@ public final class PlayerFactory {
 	private static final Random RAND = new Random();
 	/**
 	 * Creates and returns a new Goalkeeper, Defender, Midfielder or Striker Object depending on the position needed
+	 * Creates a random birthday and a generic name with a sequential number
 	 * @param position the position the new player should be assigned to
 	 * @param playerIndex sequential number for better naming for the players
 	 * @return a new Goalkeeper, Defender, Midfielder or Striker Object depending on the position needed
