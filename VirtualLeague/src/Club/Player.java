@@ -2,27 +2,29 @@ package Club;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.Random;
 
 /**
- * Represents a football player with name, birthday and position
+ * Represents a football player with name, birthday and strength
  */
 public class Player {
 	
 	
 	private String name;
 	private LocalDate birthDay;
-	private Position position;
+	private int strength;
+	private Random rand = new Random();
 	
 	/**
 	 * Constructor for a new Player object with the assigned name, birthday and position
+	 * Assigns a random strength between 1-9
 	 * @param name the name of the player
 	 * @param birthDay the birthday of the player
-	 * @param position the position the player is assigned to
 	 */
-	public Player(String name, LocalDate birthDay, Position position) {
+	public Player(String name, LocalDate birthDay) {
 		this.name = name;
 		this.birthDay = birthDay;
-		this.position = position;
+		this.strength = rand.nextInt(9) +1;
 	}
 	
 	/**
@@ -54,19 +56,27 @@ public class Player {
 		return this.birthDay;
 	}
 	/**
-	 * Sets the position of the player
-	 * @param position the new position of the player
-	 */
-	public void setPosition(Position position) {
-		this.position = position;
-	}
-	/**
 	 * Returns the position of the player
 	 * @return the position of the player
 	 */
-	public Position getPosition() {
-		return this.position;
+	public String getFunction() {
+		return "Spieler";
 	}
+	/**
+	 * Sets the strength of the player
+	 * @param strength the new strength of the player
+	 */
+	public void setStrength(int strength) {
+		this.strength = strength;
+	}
+	/**
+	 * Returns the strength of the player
+	 * @return the strength of the player
+	 */
+	public int getStrength() {
+		return this.strength;
+	}
+	
 	/**
 	 * Returns the age of the player based on the birthday
 	 * @return the age of the player in years

@@ -1,0 +1,20 @@
+Tournament Results
+==================
+Qualified for this round: Brazil, France, Portugal, England, Italy, Spain, Germany, Argentina
+Brazil (35) vs. France (44)
+France wins.
+Portugal (41) vs. England (31)
+Portugal wins.
+Italy (51) vs. Spain (34)
+Italy wins.
+Germany (46) vs. Argentina (42)
+Germany wins.
+Qualified for this round: Portugal, Italy, Germany, France
+Portugal (30) vs. Italy (34)
+Italy wins.
+Germany (64) vs. France (44)
+Germany wins.
+Qualified for this round: Germany, Italy
+Germany (60) vs. Italy (36)
+Germany wins.
+Germany wins the tournament!
